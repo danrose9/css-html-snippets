@@ -1,0 +1,461 @@
+@font-face {
+
+    font-family: 'ShellFabricMDL2Icons';
+    src: url(https://uifabricicons.azurewebsites.net) format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+.mdl2-2 {
+    display: inline-block;
+    font-family: ShellFabricMDL2Icons;
+    font-style: normal;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mdl2-2-GlobalNavButton:before {
+
+    content: "\e700 "
+
+}
+
+.mdl2-2-More:before {
+
+    content: "\e712 "
+
+}
+
+.mdl2-2-Settings:before {
+
+    content: "\e713 "
+
+}
+
+.mdl2-2-People:before {
+
+    content: "\e716 "
+
+}
+
+.mdl2-2-Search:before {
+
+    content: "\e721 "
+
+}
+
+.mdl2-2-Forward:before {
+
+    content: "\e72a "
+
+}
+
+.mdl2-2-Back:before {
+
+    content: "\e72b "
+
+}
+
+.mdl2-2-ChevronLeft:before {
+
+    content: "\e76b "
+
+}
+
+.mdl2-2-ChevronRight:before {
+
+    content: "\e76c "
+
+}
+
+.mdl2-2-Emoji2:before {
+
+    content: "\e76e "
+
+}
+
+.mdl2-2-Contact:before {
+
+    content: "\e77b "
+
+}
+
+.mdl2-2-Calendar:before {
+
+    content: "\e787 "
+
+}
+
+.mdl2-2-News:before {
+
+    content: "\e900 "
+
+}
+
+.mdl2-2-Download:before {
+
+    content: "\e896 "
+
+}
+
+.mdl2-2-Help:before {
+
+    content: "\e897 "
+
+}
+
+.mdl2-2-ChromeClose:before {
+
+    content: "\e8bb "
+
+}
+
+.mdl2-2-OneDrive:before {
+
+    content: "\e941 "
+
+}
+
+.mdl2-2-ChevronUpMed:before {
+
+    content: "\e971 "
+
+}
+
+.mdl2-2-ChevronDownMed:before {
+
+    content: "\e972 "
+
+}
+
+.mdl2-2-Ringer:before {
+
+    content: "\ea8f "
+
+}
+
+.mdl2-2-StoreLogo:before {
+
+    content: "\ea96 "
+
+}
+
+.mdl2-2-CircleFill:before {
+
+    content: "\ea3b "
+
+}
+
+.mdl2-2-HelpMirrored:before {
+
+    content: "\ea51 "
+
+}
+
+.mdl2-2-Lightbulb:before {
+
+    content: "\ea80 "
+
+}
+
+.mdl2-2-BingLogo:before {
+
+    content: "\eb6b "
+
+}
+
+.mdl2-2-MSNLogo:before {
+
+    content: "\eb6c "
+
+}
+
+.mdl2-2-OfficeLogo:before {
+
+    content: "\eb6e "
+
+}
+
+.mdl2-2-SkypeLogo:before {
+
+    content: "\eb6f "
+
+}
+
+.mdl2-2-PowerBILogo:before {
+
+    content: "\ea1e "
+
+}
+
+.mdl2-2-YammerLogo:before {
+
+    content: "\ed19 "
+
+}
+
+.mdl2-2-AdminALogo:before {
+
+    content: "\ed6a "
+
+}
+
+.mdl2-2-AdminPLogo:before {
+
+    content: "\ed71 "
+
+}
+
+.mdl2-2-ParatureLogo:before {
+
+    content: "\ed7b "
+
+}
+
+.mdl2-2-SocialListeningLogo:before {
+
+    content: "\ed7c "
+
+}
+
+.mdl2-2-Waffle:before {
+
+    content: "\ed89 "
+
+}
+
+.mdl2-2-BookingsLogo:before {
+
+    content: "\edc7 "
+
+}
+
+.mdl2-2-DocsLogoInverse:before {
+
+    content: "\edcb "
+
+}
+
+.mdl2-2-Dynamics365Logo:before {
+
+    content: "\edcc "
+
+}
+
+.mdl2-2-DynamicSMBLogo:before {
+
+    content: "\edcd "
+
+}
+
+.mdl2-2-OfficeStoreLogo:before {
+
+    content: "\edcf "
+
+}
+
+.mdl2-2-PlannerLogo:before {
+
+    content: "\edd1 "
+
+}
+
+.mdl2-2-OfficeAddinsLogo:before {
+
+    content: "\eec7 "
+
+}
+
+.mdl2-2-ClassroomLogo:before {
+
+    content: "\ef75 "
+
+}
+
+.mdl2-2-CaretSolidDown:before {
+
+    content: "\f08e "
+
+}
+
+.mdl2-2-PowerAppsLogo:before {
+
+    content: "\f091 "
+
+}
+
+.mdl2-2-SkypeForBusinessLogo:before {
+
+    content: "\f0fc "
+
+}
+
+.mdl2-2-AnalyticsLogo:before {
+
+    content: "\f1de "
+
+}
+
+.mdl2-2-WordLogo:before {
+
+    content: "\f1e3 "
+
+}
+
+.mdl2-2-ExcelLogo:before {
+
+    content: "\f1e5 "
+
+}
+
+.mdl2-2-OneNoteLogo:before {
+
+    content: "\f1e7 "
+
+}
+
+.mdl2-2-OutlookLogo:before {
+
+    content: "\f1e9 "
+
+}
+
+.mdl2-2-PowerPointLogo:before {
+
+    content: "\f1eb "
+
+}
+
+.mdl2-2-TeamsLogo:before {
+
+    content: "\f27b "
+
+}
+
+.mdl2-2-SharepointLogo:before {
+
+    content: "\f27e "
+
+}
+
+.mdl2-2-DelveLogo:before {
+
+    content: "\f280 "
+
+}
+
+.mdl2-2-OfficeVideoLogo:before {
+
+    content: "\f282 "
+
+}
+
+.mdl2-2-VisioLogo:before {
+
+    content: "\f2a7 "
+
+}
+
+.mdl2-2-MoreVertical:before {
+
+    content: "\f2bc "
+
+}
+
+.mdl2-2-StreamLogo:before {
+
+    content: "\f329 "
+
+}
+
+.mdl2-2-OfficeFormsLogo:before {
+
+    content: "\f434 "
+
+}
+
+.mdl2-2-ProjectLogo32:before {
+
+    content: "\f47e "
+
+}
+
+.mdl2-2-SwayLogo32:before {
+
+    content: "\f482 "
+
+}
+
+.mdl2-2-ClassNotebookLogo32:before {
+
+    content: "\f486 "
+
+}
+
+.mdl2-2-StaffNotebookLogo32:before {
+
+    content: "\f48c "
+
+}
+
+.mdl2-2-KaizalaLogo:before {
+
+    content: "\f492 "
+
+}
+
+.mdl2-2-TaskLogo:before {
+
+    content: "\f493 "
+
+}
+
+.mdl2-2-ProtectionCenterLogo32:before {
+
+    content: "\f494 "
+
+}
+
+.mdl2-2-NonprofitLogo32:before {
+
+    content: "\f495 "
+
+}
+
+.mdl2-2-GallatinLogo:before {
+
+    content: "\f496 "
+
+}
+
+.mdl2-2-MicrosoftFlowLogo:before {
+
+    content: "\f4b1 "
+
+}
+
+.mdl2-2-BusinessCenterLogo:before {
+
+    content: "\f4b2 "
+
+}
+
+.mdl2-2-ToDoLogoInverse:before {
+
+    content: "\f4bc "
+
+}
+
+.mdl2-2-Mail:before {
+
+    content: "\f715 "
+
+}
+
+.mdl2-2-MicrosoftStaffhubLogo:before {
+
+    content: "\f130 "
+
+}
