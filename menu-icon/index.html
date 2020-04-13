@@ -1,0 +1,28 @@
+<style>
+    .menu-trigger,
+    .menu-trigger span{
+        display: inline-block;
+        transition: all 0.4s;
+    }
+    .menu-trigger {
+        position: relative;
+        width: 50px;height: 44px; cursor: pointer;
+    }
+    .menu-trigger span{
+        position: absolute; left: 0;
+        width: 100%;height: 4px;
+        background-color: #fff;border-radius: 4px;
+    }
+    span:nth-last-of-type(1){top: 0;}
+
+    span:nth-last-of-type(2){top: 20px;}
+    
+</style>
+
+<section>
+    <a class="menu-trigger" id="menu01">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+</section>

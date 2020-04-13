@@ -1,0 +1,90 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#dark-mode-toggle:checked+body {
+    --bg-color: #26242E;
+    --text-color: #FFF;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.square {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #ce50da;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: 50% 50% 0;
+    animation: loading ls ease infinite;
+    backface-visibility: hidden;
+}
+
+.top-corner:before,
+.top-corner:after,
+.bottom-corner:before,
+.bottom-corner:after {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    color: #ce50da;
+    content: "";
+}
+
+.top-corner:before {
+    border-left: 2px solid;
+    border-top: 2px solid;
+    top: -8px;
+    left: -8px;
+}
+
+.top-corner:after {
+    border-right: 2px solid;
+    border-top: 2px solid;
+    top: -8px;
+    right: -8px;
+}
+
+.bottom-corner:before {
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    bottom: -8px;
+    left: -8px;
+}
+
+.bottom-corner:after {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    bottom: -8px;
+    right: -8px;
+}
+
+@keyframes loading {
+    15% {
+        transform: scale(1.6);
+    }
+
+    50% {
+        transform: rotate(-189deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}

@@ -1,0 +1,13 @@
+@font-face{
+    src: url(fonts/OpenSansCondensed/OpenSansCondensed-Light.ttf);
+    font-family: osc-light;
+}
+
+.paragraph {
+    font-size: 50px;
+    line-height: 62px;
+    font-family: osc-light;
+    /* font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-style: italic; */
+}
