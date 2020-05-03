@@ -1,0 +1,44 @@
+
+.my-learning-stack {
+    background-color: #2c3531;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 100px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.box {
+    border: 1px solid #d1e8e2;
+    background-color: #4f4a41;
+    padding: 20px;
+    font-size: 150%;
+    font-style: italic;
+}
+
+.progress {
+    display: grid;
+    background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 25px 5px 0px 5px;
+	height: 30px;
+	width: auto;
+}
+
+.progress-done {
+    background: linear-gradient(to left, #F2709C, #FF9472);
+    /* box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C; */
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 0;
+    transition: 1s ease 0.3s;
+    justify-content: center;
+}
+
