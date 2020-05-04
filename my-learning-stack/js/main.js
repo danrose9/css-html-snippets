@@ -1,21 +1,19 @@
 const progress = document.querySelectorAll('.progress-done');
-var value1 = 12;
-var value2 = 47;
-var value3 = 33;
-var value4 = 87;
-var value5 = 3;
-var value6 = 29;
 
-// var i;
+var jsonObj = JSON.parse('{"value0": 12, "value1": 47, "value2": 34, "value3": 87, "value4": 3, "value5": 29}');
 
-// for (i = 0; i < progress.length; i++) {
-//     progress[i].style.width = progress[i].getAttribute('data-done') + '%';
-//     progress[i].style.opacity = 1;
-//   }
+var i = 0;
+    
+// enumerate json
+for (var key in jsonObj) {
 
-var i;
-for (i = 0; i < progress.length; i++) {
-    document.getElementById("value" + 3).innerHTML = value3 + "%";
-    //progress[i].style.width = progress[i].getAttribute('value3') + '%';
-    //progress[i].style.opacity = 1;
- }
+    var value = jsonObj[key];
+    console.log(value);
+
+    var percentDone = document.getElementById(key).innerHTML = value + "%"; // value
+
+    progress[i].style.width = value + '%'; // Progress Bar
+    progress[i].style.opacity = 1;
+    i++;
+
+}
