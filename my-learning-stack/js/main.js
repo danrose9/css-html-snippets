@@ -1,19 +1,67 @@
-const progress = document.querySelectorAll('.progress-done');
+// const progressDone = document.querySelectorAll('.progress-done');
+const wrapper = document.getElementById('wrapper');
 
-var jsonObj = JSON.parse('{"value0": 12, "value1": 47, "value2": 34, "value3": 87, "value4": 3, "value5": 29}');
+var jsonObj = JSON.parse('{"HTML": 72,"CSS": 47,"Javascript": 34,"Bootstrap": 87,"Angular": 1,"NodeJS": 29}');
 
 var i = 0;
+let arrayLength = Object.keys(jsonObj).length;
+console.log("There are " + arrayLength + " elements in the array");
+
+function createDiv(divId, text) {
+    var div = document.createElement("div");
+    div.id = divId;
+    div.innerText = text;
     
+    return div;
+  }
+
 // enumerate json
+// for (var key in jsonObj) {
+
+//     var value = jsonObj[key];
+//     console.log(key + ": " + value);
+
+//     var percentDone = document.getElementById(key).innerHTML = value + "%"; // value
+
+//     progress[i].style.width = value + '%'; // Progress Bar
+//     progress[i].style.opacity = 1;
+//     i++;
+
+// }
+
+// Loop to create a div element
+
+
+var fragment = document.createDocumentFragment();
+
 for (var key in jsonObj) {
 
-    var value = jsonObj[key];
-    console.log(value);
+    let value = jsonObj[key];
+    console.log(key + ": " + value);
 
-    var percentDone = document.getElementById(key).innerHTML = value + "%"; // value
+    var board = document.createElement('div');
+    board.id = "box";
+    board.innerText = key;   
+    wrapper.appendChild(board);
+    
+    var progress = document.createElement('div');
+    progress.id = "progress";
+    board.appendChild(progress);
+    //fragment.appendChild(div);
 
-    progress[i].style.width = value + '%'; // Progress Bar
-    progress[i].style.opacity = 1;
-    i++;
+    
+    var progressDone = document.createElement('div');
+    progressDone.className = "progress-done";
+    progress.appendChild(progressDone);
+    progressDone.style.width = value + '%'; // Progress Bar
+    progressDone.style.opacity = 1;
+    
+    i++
+ }
+ 
+ // wrapper.appendChild(board);
 
-}
+
+
+
+

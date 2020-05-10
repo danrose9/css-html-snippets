@@ -4,14 +4,15 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.wrapper {
+#wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     grid-gap: 100px;
     grid-auto-rows: minmax(100px, auto);
+
 }
 
-.box {
+#box {
     border: 1px solid #d1e8e2;
     background-color: #4f4a41;
     padding: 20px;
@@ -19,7 +20,7 @@
     font-style: italic;
 }
 
-.progress {
+#progress {
     display: grid;
     background-color: #d8d8d8;
 	border-radius: 20px;
@@ -38,7 +39,8 @@
     align-items: center;
     height: 100%;
     width: 0;
-    transition: 1s ease 0.3s;
+    transition: 5s ease 0.3s;
     justify-content: center;
 }
+
 
