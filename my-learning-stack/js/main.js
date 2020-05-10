@@ -1,7 +1,7 @@
 // const progressDone = document.querySelectorAll('.progress-done');
 const wrapper = document.getElementById('wrapper');
 
-var jsonObj = JSON.parse('{"HTML": 72,"CSS": 47,"Javascript": 34,"Bootstrap": 87,"Angular": 1,"NodeJS": 29}');
+var jsonObj = JSON.parse('{"HTML": 72,"CSS": 47,"Javascript": 34,"Bootstrap": 87,"Angular": 10,"NodeJS": 29}');
 
 var i = 0;
 let arrayLength = Object.keys(jsonObj).length;
@@ -15,20 +15,6 @@ function createDiv(divId, text) {
     return div;
   }
 
-// enumerate json
-// for (var key in jsonObj) {
-
-//     var value = jsonObj[key];
-//     console.log(key + ": " + value);
-
-//     var percentDone = document.getElementById(key).innerHTML = value + "%"; // value
-
-//     progress[i].style.width = value + '%'; // Progress Bar
-//     progress[i].style.opacity = 1;
-//     i++;
-
-// }
-
 // Loop to create a div element
 
 
@@ -41,7 +27,7 @@ for (var key in jsonObj) {
 
     var board = document.createElement('div');
     board.id = "box";
-    board.innerText = key;   
+    board.innerText = key + " : " + value + "%";   
     wrapper.appendChild(board);
     
     var progress = document.createElement('div');
@@ -51,7 +37,7 @@ for (var key in jsonObj) {
 
     
     var progressDone = document.createElement('div');
-    progressDone.className = "progress-done";
+    progressDone.id = "progress-done";
     progress.appendChild(progressDone);
     progressDone.style.width = value + '%'; // Progress Bar
     progressDone.style.opacity = 1;

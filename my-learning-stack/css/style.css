@@ -27,18 +27,15 @@
 	position: relative;
 	margin: 25px 5px 0px 5px;
 	height: 30px;
-	width: auto;
+    width: auto;
 }
 
-.progress-done {
+#progress-done {
     background: linear-gradient(to left, #F2709C, #FF9472);
-    /* box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C; */
     border-radius: 20px;
-    color: #fff;
-    display: flex;
-    align-items: center;
+    /* align-items: center;
     height: 100%;
-    width: 0;
+    /* width: 0; */
     transition: 5s ease 0.3s;
     justify-content: center;
 }
