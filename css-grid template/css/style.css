@@ -1,0 +1,62 @@
+body {
+    margin: 20px;
+}
+
+.header {
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    top: 0;
+    margin-left: inherit;
+}
+
+.sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 300px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(300px, auto) 1fr;
+    grid-template-rows: 100px 1fr 100px;
+        
+    grid-gap: 10px;
+    color: #444;
+    width: auto;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+
+
+
+    height: 100vh;
+
+}
+
+.box {
+    border: 1px solid #444;
+    padding: 20px;
+    font-size: 150%;
+}
+
+
+
+
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    bottom: 0;
+}

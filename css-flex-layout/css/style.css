@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: raleway;
+    font-size: 40px;
+}
+
+.container>* {
+    border: 1px solid #444;
+}
+
+header {
+    /* flex: 0 1 100%; */
+    min-height: 100px;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    min-height: inherit;
+}
+
+.main-content {
+    display: flex;
+    /* flex-direction: row;
+    justify-content: flex-start;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    position: relative; */
+    /* need this to position inner content */
+}
+
+footer {
+    min-height: 5vh;
+    flex: 0 1 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 15vw;
+    border-right: 1px solid #D7DBDD;
+    background: #34495e
+}
+
+.item {
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.section {
+    padding: 10px;
+}
