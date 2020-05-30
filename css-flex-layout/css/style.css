@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
-
 .container {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     font-family: raleway;
     font-size: 40px;
@@ -11,44 +9,43 @@
 
 .container>* {
     border: 1px solid #444;
+    padding: 0;
+
 }
 
 header {
-    /* flex: 0 1 100%; */
-    min-height: 100px;
     justify-content: space-between;
+    min-height: 10vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row;
-    align-content: flex-start;
-    min-height: inherit;
+    height: 100%;
+    z-index: 0;
 }
 
 .main-content {
-    display: flex;
-    /* flex-direction: row;
-    justify-content: flex-start;
-    overflow-y: auto;
-    flex: 1 1 auto;
-    position: relative; */
-    /* need this to position inner content */
+    z-index: 0;
 }
 
 footer {
-    min-height: 5vh;
-    flex: 0 1 100%;
+    z-index: 1;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    z-index: 0;
     min-width: 15vw;
-    border-right: 1px solid #D7DBDD;
-    background: #34495e
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* border-right: 0 solid #D7DBDD; */
+    background: #34495e;
 }
 
 .item {
